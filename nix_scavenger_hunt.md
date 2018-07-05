@@ -57,7 +57,7 @@ bash: /home/user: Is a directory
 
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?* Just one file. 2015_special_stuff.demo
 
-* Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
+* Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?* cd
 * Press the up arrow on your keyboard. *What just happened?* it changed to cd
 * Press the up arrow a few more times. *What do you see?* I see everything I had just entered previously. 
 * Run the `history` command. *What do you see?* 
