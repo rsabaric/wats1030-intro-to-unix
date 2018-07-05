@@ -14,13 +14,39 @@ and then clone it to your development environment.
 
 ### Navigating the Filesystem
 
-* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
-* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
-* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
-* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
+* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:* /projects
+
+* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?* 
+
+rsabaric.github.io      wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
+wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
+
+* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?* For the -alh options I am getting a note saying command not found. The ls -alh is below.
+
+total 4.0K
+
+drwxr-xr-x 13 user root  321 Jul  4 01:11 .
+drwxr-xr-x 22 root root  295 Jul  5 18:10 ..
+drwxr-xr-x  4 user root  109 Jun 26 18:07 rsabaric.github.io
+drwxr-xr-x  5 user root  178 Jul  4 01:11 wats1030-intro-to-unix
+drwxr-xr-x  4 user root  253 Apr 25 02:23 wats3010-adv-markup
+drwxr-xr-x  4 user root  192 Apr 13 01:31 wats3010-basic-markup
+drwxr-xr-x  5 user root  130 Apr 22 21:40 wats3010-css
+drwxr-xr-x  7 user root  134 May  3 03:02 wats3010-embedded-media
+drwxr-xr-x  4 user root   98 Apr  9 00:19 wats3010-hello-world
+drwxr-xr-x 11 user root 4.0K May 16 01:06 wats3010-intro-to-bootstrap-4
+drwxr-xr-x  8 user root  300 Jun  3 23:31 wats3010-product-page
+drwxr-xr-x  6 user root  101 Jun 29 03:45 wats3020-mad-libs
+drwxr-xr-x  7 user root  115 Jul  3 16:37 wats3020-sandwich-machine
+
+* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?* The man ls displays the manual page for the item or program. The 'a' command displays all the of manual intro pages. The 'l" decompresses the files. Lastly, the 'h' command 
+
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
+
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
+
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
+
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
 * Press the up arrow on your keyboard. *What just happened?*
