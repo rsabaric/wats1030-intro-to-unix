@@ -39,25 +39,58 @@ drwxr-xr-x  8 user root  300 Jun  3 23:31 wats3010-product-page
 drwxr-xr-x  6 user root  101 Jun 29 03:45 wats3020-mad-libs
 drwxr-xr-x  7 user root  115 Jul  3 16:37 wats3020-sandwich-machine
 
-* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?* The man ls displays the manual page for the item or program. The 'a' command displays all the of manual intro pages. The 'l" decompresses the files. Lastly, the 'h' command 
+* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?* 
+
+The man ls displays the manual page for the item or program. The 'a' command displays all the of manual intro pages. The 'l" decompresses the files. Lastly, the 'h' command seems to show where a symlink points. 
 
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 
+bin  boot  dev  etc  home  lib  lib64  media  mnt  open-jdk-source-file-location  opt  proc  projects  root  run  sbin  srv  sys  tmp  usr  var
+
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
+
+user@810583208b96:/projects$ cd
+user@810583208b96:~$ pwd
+/home/user
+user@810583208b96:~$
 
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
 
-* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
+/home/user
+
+* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?* This function does not seem to be working for me.
+
+user@810583208b96:~$ challenge_files
+bash: challenge_files: command not found
+user@810583208b96:~$ ls
+apache-maven-3.3.9  che  entrypoint.sh  group.template  passwd.template  tomcat8
+user@810583208b96:~$
+
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
-* Press the up arrow on your keyboard. *What just happened?*
-* Press the up arrow a few more times. *What do you see?*
-* Run the `history` command. *What do you see?*
+* Press the up arrow on your keyboard. *What just happened?* it changed to cd
+* Press the up arrow a few more times. *What do you see?* I see everything I had just entered previously. 
+* Run the `history` command. *What do you see?* 1  ls /
+    2  /
+    3  cd
+    4  pwd
+    5  cd
+    6  ~
+    7  pwd
+    8  challenge_files
+    9  cd
+   10  challenge_files
+   11  ls
+   12  cd
+   13  up
+   14  history
 
 ### Observing the System
 
-* Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
-* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*
-* How long has your system been running? Use `uptime` to see, and *paste the result here:*
+* Discover what account you are logged into using the `whoami` command. *What username are you currently using?* I am only getting the result 'user'
+
+* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:* There is none listed.
+
+* How long has your system been running? Use `uptime` to see, and *paste the result here:*  19:42:58 up 3 days, 11:36,  0 users,  load average: 0.42, 0.62, 0.91
 * Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
 
