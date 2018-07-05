@@ -58,41 +58,47 @@ user@810583208b96:~$
 
 /home/user
 
-* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?* This function does not seem to be working for me.
-
-user@810583208b96:~$ challenge_files
-bash: challenge_files: command not found
-user@810583208b96:~$ ls
-apache-maven-3.3.9  che  entrypoint.sh  group.template  passwd.template  tomcat8
-user@810583208b96:~$
+* Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?* Just one file. 2015_special_stuff.demo
 
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
 * Press the up arrow on your keyboard. *What just happened?* it changed to cd
 * Press the up arrow a few more times. *What do you see?* I see everything I had just entered previously. 
-* Run the `history` command. *What do you see?* 1  ls /
-    2  /
-    3  cd
-    4  pwd
-    5  cd
-    6  ~
-    7  pwd
-    8  challenge_files
-    9  cd
-   10  challenge_files
-   11  ls
-   12  cd
-   13  up
-   14  history
+* Run the `history` command. *What do you see?* 
+    1  uptime
+    2  ps aux
+    3  top
+    4  ls
+    5  pwd
+    6  cd wats 1030-intro-to-unix/challenge_files/
+    7  cd wats1030-intro-to-unix/challenge_files/
+    8  pwd
+    9  ls
+   10  cd
+   11  cd up
+   12  history
 
 ### Observing the System
 
-* Discover what account you are logged into using the `whoami` command. *What username are you currently using?* I am only getting the result 'user'
+* Discover what account you are logged into using the `whoami` command. *What username are you currently using?* I am only getting the result 'user'.
 
-* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:* There is none listed.
+* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:* There is no one else listed.
 
 * How long has your system been running? Use `uptime` to see, and *paste the result here:*  19:42:58 up 3 days, 11:36,  0 users,  load average: 0.42, 0.62, 0.91
-* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
-* Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
+* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?* I can't really tell what is happening her, but it seems like it is just showing me working through some projects. 
+SER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user         1  0.0  0.0   4500   640 ?        Ss   20:01   0:00 /bin/sh -c tail -f /dev/null
+root        26  0.0  0.0  47000  2004 ?        S    20:01   0:00 sudo /usr/sbin/sshd -D
+user        27  0.0  0.0   6036   628 ?        S    20:01   0:00 tail -f /dev/null
+root        28  0.0  0.0  65512  3252 ?        S    20:01   0:00 /usr/sbin/sshd -D
+user        32  0.0  0.0   4508   752 ?        Ss   20:01   0:00 /bin/sh -c trap '[ -z "$(jobs -p)" ] || kill $(jobs -p); [ -e /tmp/docker-exec-198020.pid ]
+user        92  0.0  0.0  13128  7872 ?        Sl   20:01   0:00 /home/user/che/exec-agent/che-exec-agent -addr :4412 -cmd /bin/bash -path /[^/]+ -enable-aut
+user       106  0.0  0.0   4508   748 ?        Ss   20:01   0:00 /bin/sh -c trap '[ -z "$(jobs -p)" ] || kill $(jobs -p); [ -e /tmp/docker-exec-198023.pid ]
+user       167  0.0  0.0  14324  8024 ?        Sl   20:01   0:00 /home/user/che/terminal/che-websocket-terminal -addr :4411 -cmd /bin/bash -path /[^/]+ -enab
+user       284  0.0  0.0   4508   752 ?        Ss   20:01   0:00 /bin/sh -c trap '[ -z "$(jobs -p)" ] || kill $(jobs -p); [ -e /tmp/docker-exec-198038.pid ]
+user       344 16.0  1.3 5816484 411180 ?      Sl   20:01   0:40 /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java -Djava.util.logging.config.file=/home/user/ch
+user       473  0.0  0.0  21036  3312 pts/0    Ss   20:02   0:00 /bin/bash
+user       504  0.0  0.0  36076  1644 pts/0    R+   20:06   0:00 ps aux
+* Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?* It seems like this is constantly changing. Even where I can't seem to copy it quickly enough. This shows some commands and run time. 
 
 ### Finding and Viewing Files
 
