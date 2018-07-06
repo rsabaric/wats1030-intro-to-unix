@@ -21,12 +21,11 @@ and then clone it to your development environment.
 rsabaric.github.io      wats3010-adv-markup    wats3010-css             wats3010-hello-world           wats3010-product-page  wats3020-sandwich-machine
 wats1030-intro-to-unix  wats3010-basic-markup  wats3010-embedded-media  wats3010-intro-to-bootstrap-4  wats3020-mad-libs
 
-* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?* For the -alh options I am getting a note saying command not found. The ls -alh is below.
+* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?* I am getting a note that says command not found for options.
 
-total 4.0K
-
+total 4.0Ktotal 4.0K
 drwxr-xr-x 13 user root  321 Jul  4 01:11 .
-drwxr-xr-x 22 root root  295 Jul  5 18:10 ..
+drwxr-xr-x 22 root root  295 Jul  6 20:07 ..
 drwxr-xr-x  4 user root  109 Jun 26 18:07 rsabaric.github.io
 drwxr-xr-x  5 user root  178 Jul  4 01:11 wats1030-intro-to-unix
 drwxr-xr-x  4 user root  253 Apr 25 02:23 wats3010-adv-markup
