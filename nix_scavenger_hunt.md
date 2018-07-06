@@ -60,18 +60,11 @@ bash: /home/user: Is a directory
 * Press the up arrow on your keyboard. *What just happened?* it changed to cd
 * Press the up arrow a few more times. *What do you see?* I see everything I had just entered previously. 
 * Run the `history` command. *What do you see?* 
-    1  uptime
-    2  ps aux
-    3  top
-    4  ls
-    5  pwd
-    6  cd wats 1030-intro-to-unix/challenge_files/
-    7  cd wats1030-intro-to-unix/challenge_files/
-    8  pwd
-    9  ls
-   10  cd
-   11  cd up
-   12  history
+     1  ls
+    2  cd wats1030-intro-to-unix/challenge_files/
+    3  ls
+    4  cd
+    5  history
 
 ### Observing the System
 
@@ -107,6 +100,10 @@ user       504  0.0  0.0  36076  1644 pts/0    R+   20:06   0:00 ps aux
 I am getting the a note that there is no such file or directory.
 
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
+
+I find two files. Britt-Erdman.user:O'Harachester, WA 37261
+Lissie-Strosin.user:Jewessfurt, WA 00816-7241
+
 * Use the `-r` option of `grep` to *recursively* find the text "Waldo" hidden in a file somewhere under the `challenge_files` directory. *Paste the result showing the file and line where the word "Waldo" shows up.*
 
 ### Pipes and Connecting Commands
